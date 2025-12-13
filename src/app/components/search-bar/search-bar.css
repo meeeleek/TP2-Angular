@@ -1,0 +1,212 @@
+/* Search Bar Header Section */
+.header {
+    padding: 50px;   
+}
+
+/* Input Group Styling */
+.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.input-group-text {
+    background: linear-gradient(135deg, #4a8021 0%, #5a9628 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+/* Input Styling */
+input.form-control {
+    color: #2d5016;
+    border: 2px solid #4a8021;
+    border-left: none;
+    border-right: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input.form-control:focus {
+    border-color: #2d5016;
+    box-shadow: none;
+    background-color: #fafafa;
+}
+
+input.form-control::placeholder {
+    color: #a8d08d;
+}
+
+/* Button Styling */
+.btn-success {
+    background: linear-gradient(135deg, #4a8021 0%, #5a9628 100%);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #2d5016 0%, #4a8021 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 128, 33, 0.4);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    border: none;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0a58ca 0%, #084298 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+}
+
+/* Auto Container - Card Grid */
+.auto-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(74, 128, 33, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    flex: 1 1 300px;
+    max-width: 400px;
+    min-width: 280px;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(74, 128, 33, 0.4);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Card Body - Even Style */
+.card-body-even {
+    background: linear-gradient(135deg, #4a8021 0%, #5a9628 100%);
+    color: #f0f8ff;
+    padding: 20px;
+    border-top: 3px solid #2d5016;
+}
+
+.card-body-even .card-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.card-body-even .card-text {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Card Body - Odd Style */
+.card-body-odd {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f4ff 100%);
+    color: #2d5016;
+    padding: 20px;
+    border-top: 3px solid #4a8021;
+}
+
+.card-body-odd .card-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.card-body-odd .card-text {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Empty State */
+.auto-container > p {
+    text-align: center;
+    color: #2d5016;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 40px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-group {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .auto-container {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+    
+    input.form-control {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 15px;
+    }
+    
+    .input-group-text,
+    .btn-success {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .card-body-even,
+    .card-body-odd {
+        padding: 15px;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}

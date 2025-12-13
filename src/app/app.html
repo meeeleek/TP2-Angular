@@ -1,0 +1,20 @@
+<app-head-bar></app-head-bar>
+<app-search-bar [autos]="autoList" (onSelectAuto)="selectAuto($event)"></app-search-bar>
+
+@if(selectedAuto){
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img [src]="selectedAuto.photo" />
+            </div>
+            <div class="col-4">
+                <h4>{{selectedAuto.brand}} {{selectedAuto.model}}</h4>
+                <p>
+                    {{selectedAuto.description}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+}

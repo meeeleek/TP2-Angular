@@ -1,0 +1,61 @@
+/* CSS Variables - Color Palette */
+:root {
+    --primary-green: #4a8021;
+    --dark-green: #2d5016;
+    --light-green: #5a9628;
+    --accent-green: #a8d08d;
+    --light-blue: #f0f8ff;
+    --card-blue: #e6f4ff;
+    --shadow-light: rgba(74, 128, 33, 0.3);
+    --shadow-hover: rgba(74, 128, 33, 0.4);
+}
+
+/* Header Styling */
+.header {
+    padding: 50px;
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+    pointer-events: none;
+}
+
+h1 {
+    color: var(--light-blue);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}

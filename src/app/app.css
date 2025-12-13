@@ -1,0 +1,70 @@
+/* Main Container */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Row Layout */
+.row {
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Image Styling */
+img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(74, 128, 33, 0.3);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(74, 128, 33, 0.4);
+}
+
+/* Paragraph Styling */
+p {
+    text-align: justify;
+    color: #2d5016;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    img {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
